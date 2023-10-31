@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+<!-- muzik çalıcısı -->
+<div class="music-player">
+    <!-- oynatma listesi -->
+    <button id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <img src="media/inna.jpg" alt="" id="song-image">
+    <!-- şarkı detayı -->
+    <div class="song-details">
+        <p id="song-name" ></p>
+        <p id="song-artist"></p>
+    </div>
+    <!-- OYNATMA seçenekleri   -->
+    <div class="player-options">
+        <button id="shuffle">
+            <i class="fa-solid fa-shuffle"></i>
+        </button>
+
+        <button id="prev">
+            <i class="fa-solid fa-backward-step"></i>
+        </button>
+
+        <button id="play">
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+        <button id="pause">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+
+        <button id="next">
+            <i class="fa-solid fa-forward-step"></i>
+        </button>
+
+        <button id="repeat">
+            <i class="fa-solid fa-repeat"></i>
+        </button> 
+    </div>
+
+    <!-- ses -->
+    <audio id="audio" preload="metadata"></audio>
+
+    <div id="progress-bar">
+        <div id="current-progress"></div>
+    </div>
+<br>
+    <!-- zaman -->
+    <div class="time-container">
+        <span id="current-time"></span>
+        <span id="max-duration"></span>
+
+    </div>
+
+    <!-- şarkı listesi -->
+    <div id="playlist-container">
+        <button id="close-button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+
+    </div>
+
+
+
+</div>
+
+<!-- script -->
+    <script src="main.js"></script>
+</body>
+</html>
